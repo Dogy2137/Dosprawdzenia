@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!-- kodowanie znaków, możemy używać polskich znaków -->
+        <meta charset="UTF-8">
+        <!-- sposób wyświetlania na urządzeniach mobilnych -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- tytuł strony. m.in. w wynikach wyszukiwania-->
+        <title>Carrot Studio</title>
+        <!-- importujemy czcionkę, żeby jej użyć-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin-ext" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <!-- ikonka strony -->      
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    <body>
+        <div>
+            <header>
+                <img src="tlo4.png" alt="czerwone tlo"/> 
+            </header>
+            
+            
+            
+            <button>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </button>
+             
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+             crossorigin="anonymous"></script>
+             <script>
+             $('.burger').on('click', function () {
+             $(this).toggleClass('active');
+             })
+             </script>
+            
+            <nav>
+                <a class="menu active" href="index.html">Strona Główna</a>
+                <a class="menu" href="#">Gry</a>
+                <a class="menu" href="#">Posada</a>
+                <a class="menu" href="#">Kontakt</a>
+            </nav>
+            
+            
+            <div class="nav-toggle">
+	<div class="nav-toggle-bar"></div>
+</div>
+<nav class="nav">
+	<ul>
+		<li><a href="#">Portfolio</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+
+          <script src="menuwysuwane.js"></script>  
+            <section>
+               
+            </section>
+            <footer>© Kacper Jędrzejczyk, 2018
+            © Carrot - Studio, 2018
+            </footer>
+            
+        </div>
+    </body>
+</html>
